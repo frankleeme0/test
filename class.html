@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <div>
+        <span>1</span>
+        <span>2</span>
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div>2</div>
+    <input type="text" name="" id="">
+    <script>
+        // 'use strict';
+        class Star {
+            constructor(uname,age) {
+                this.uname=uname;
+                this.age=age;
+                this.btn=document.querySelector('button');
+                this.btn.onclick=this.sing;
+            }
+            sum(){
+                console.log(this.uname + this.age);
+            }
+            sing(song) {
+                console.log('唱歌'+this.uname+song);
+            }
+        }
+        var ldh=new Star('刘德华',20);
+        ldh.sing('冰雨');
+        // console.log(ldh.uname);
+        class Son extends Star {
+            constructor(uname,age) {
+                super(uname,age);
+                this.age=age+1;
+            }
+            show() {
+                console.log(this.age);
+            }
+        }
+        var son=new Son(1,2);
+        son.sing('wo');
+        son.show();
+        var div=document.querySelectorAll('div');
+        for (i=0;i<div.length;i++){
+            div[i].index=i;
+
+            
+            console.log(div[i].index);
+        }
+        // console.log(div[0].index);
+        // div[0].onclick=function(e) {
+        //     console.log(div[0].index);
+        //     // div[0].click();
+        // }
+        var input=document.querySelector('input');
+        input.onselect=function(){
+            input.value='123';
+            this.blur();
+            
+        }
+        // function Supers(uname,age) {
+        //     this.uname=uname;
+        //     this.age=age;
+
+        // }
+        // Supers.prototype.sing=function(){
+        //     console.log('sing');
+        // }
+        // var liu=new Supers('刘德华',18);
+        // var zhang=new Supers('张学友',19);
+
+        // console.log(liu.sing===zhang.sing);
+        // console.log(liu.__proto__);
+        // var arr=[1,2,3];
+        // var list='abc';
+        // for (var i in list) {
+        //     console.log(list[i]);
+        // }
+        // for (var i in arr) {
+        //     console.log(i);
+        // }
+        // console.log(arr);
+        // ((function(){
+        //     'use strict';
+        // }))
+        // function arrayLike() {
+        //     [].forEach.call(arguments,a=>console.log(a));
+        //     [...arguments].forEach(a=>console.log(a));
+        // }
+        // arrayLike(1,2,3);
+
+
+        // function callerDemo() {
+        //     if (callerDemo.caller) {
+        //     var a= callerDemo.caller.toString();
+        //     alert(a);
+        //     } else{
+        //     alert("thisis a top function");
+        //     }
+        // }
+        // function handleCaller() {
+        //     //zhe
+        //     callerDemo();
+        // }
+        // handleCaller();
+
+    </script>
+</body>
+</html>

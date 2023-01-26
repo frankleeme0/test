@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function a() {
+        //     function  b() {
+        //         console.log('gogogo');
+        //     }
+        // }
+        // b();
+        //
+        var obj={
+            uname:'zhang',
+            sex:'nan',
+            sayHi:function() {
+                console.log('hi');
+            } 
+        };
+        obj.sayHi()
+        // console.log(obj.sayHi()); 
+        console.log(obj['uname']); 
+
+        var a=new Object();
+        a.name='li';
+        a.sex='male';
+        console.log(a['name']);
+
+
+        function Hero(name,type,blood) {
+            this.name=name;
+            this.type=type;
+            
+            this.attack=function (attack) {
+                console.log(attack);
+            }
+            this.blood=blood;
+
+        }
+        var lianpo=new Hero('廉颇','力量型','500')
+        console.log(lianpo.name);
+        console.log(lianpo['type']);
+        console.log(lianpo['blood']);
+        lianpo.attack('近战');
+        // console.log(lianpo['attack']);
+
+        var dog={
+            name:'可可',
+            type:'阿拉斯加犬',
+            age:5,
+            color:'brown',
+            canSkill:function(skill){
+                console.log(skill);
+                
+            }
+            
+
+        };
+        dog.canSkill('bark');
+        for (var k in dog) {
+            console.log(dog[k]);
+        }
+        console.log(Math.PI);
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

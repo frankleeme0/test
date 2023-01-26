@@ -1,0 +1,8 @@
+/* 多行注释（块注释）shift+alt+a */
+.father {
+  width: 20px;
+  height: 8.5rem;
+}
+.father .son {
+  background-color: pink;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.3.min.js"></script>
+    <style>
+        .current {
+            background-color: blueviolet;
+            /* transition: all, 1s; */
+        }
+        .we {
+            min-width: 1000px;
+            max-width: 1920px;
+            height: 200px;
+            background-color: pink;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>0</div>
+    <div>1</div>
+    <h1 class="we">
+        wolaile
+    </h1>
+    <script>
+        $(function(){
+            $('div').css({
+                width:400,
+                height:400,
+                // background:'red'//这里的优先级优于类名样式
+            });
+            $('div').click(function(){
+                $(this).toggleClass('current');
+                // $(this).css('width',200);
+                $(this).stop().toggle('slow');
+            });
+            console.log($('div').text());
+            var div=$('<div>222</div>');
+            $('div').eq(1).after(div);
+            $('div').eq(0).prepend(div);
+        })
+    </script>
+</body>
+</html>

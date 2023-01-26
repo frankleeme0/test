@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str='春风';
+        console.log(str.indexOf('春'));
+        console.log(str.charCodeAt(0));
+        var a=true;
+        console.log(typeof a);
+    </script>
+    <style>
+        .change {
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="time">2019-9-9</div>
+    <button id="btn">唐伯虎</button>
+    <script>
+        var a=document.getElementById('time');
+        console.log(a);
+        console.dir(a);
+        var b=document.querySelector('div');
+        var c=document.body;
+        var d=document.documentElement;
+        var btn=document.getElementById('btn');
+        
+        btn.onmousemove=function() {
+            btn.innerText='点秋香';
+        }
+        var flag=0;
+        // a.onclick=function() {
+        //     if (flag==0) {
+        //         this.className='time change';
+        //         flag=1;
+        //     }else {
+        //         this.className='time';
+        //         flag=0;
+        //     }
+            
+
+        // }
+        // a.className='time';
+        a.onmouseout =function() {
+            this.style.backgroundColor="#ccc";
+            a.style.backgroundUrl
+            
+        }
+    </script>
+</body>
+</html>

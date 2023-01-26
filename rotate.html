@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./wheel/iconfont.css">
+    <style>
+        .box {
+            width: 250px;
+            transition: all 1s;
+            /* origin是复合属性 用空格隔开，与background position相同，也可以用于位移和缩放*/
+            transform-origin: 250px 250px;
+        }
+        .box:hover {
+            
+            /* 正数是顺时针转 */
+            transform: rotate(-360deg);
+            
+        }
+        .box1 {
+            /* background: url(./two-car.jpeg); */
+            /* width: 250px; */
+            height: 250px;
+            background-position: 50% 50%;
+            background-color: skyblue;
+            /* transition: all 2s; */
+            /* transform-origin: center bottom; */
+        }
+        .box1 .iconfont {
+            display: block;
+            /* height: 250px;
+            width: 250px; */
+            font-size: 20px;
+            
+        }
+        .box1:hover .iconfont {
+            /* 注意顺序，先平移坐标轴不变，先旋转坐标轴会改变 */
+            transform: translate(2000px) rotate(360deg);
+            /* 也不能分开写，否则会覆盖 */
+            
+        }
+        img {
+            transition: all 10s;
+        }
+        .box1:hover img {
+            transform: translate(2000px) rotate(360deg);
+                        
+        }
+    </style>
+</head>
+<body>
+    <img src="./fengche.jpeg" alt="" class="box">
+    <div class="box1">
+        <!-- <p class="iconfont icon-chelun"></p> -->
+        <i class="iconfont icon-chelun"></i>
+        <img src="./wheel/车轮.png" alt="">
+
+    </div>
+</body>
+</html>

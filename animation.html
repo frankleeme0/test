@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+             animation: ani 2s linear infinite  alternate ;
+            /* animation: ani 2s backwards;  */
+            /* animation: ani 2s forwards; */
+            /* animation-fill-mode: forwards ; */
+            
+        }
+        /* 百分比是指动画总时长占比 */
+        @keyframes ani {
+            /* from {
+                width: 200px;
+            }
+            to {
+                width: 600px;
+            } */
+            0% {width: 200px;}
+            50% {width: 500px; height: 300px;}
+            100% {width: 800px; height: 500px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 40px;
+            /* 默认400normal，700bold */
+            font-weight: 700;
+            font-style: italic;
+            font-family: 苹方,楷体,sans-serif;
+            /* 默认字体为微软雅黑（Windows）或苹方（macOS） */
+            font: italic 400 16px sans-serif;
+            /* text-indent: 2em; */
+            /* text-align: center; */
+            color: #fab;
+            
+            
+        }
+        .box {
+            /* width: 200px; */
+            height: 400px;
+            background-color: rgba(20, 205, 255, 0.5);
+            text-align: center;
+            text-decoration: underline;
+            /* 背景图片不能撑开盒子 */
+            background-image: url("./无标题.png");
+            background-repeat: repeat-x;
+            background-position: center 20px;
+            /* 连写可以任意顺序，以下是推荐顺序 */
+            /* background: rgb(109, 72, 72) url(./无标题.png) no-repeat 20px 20px;    */
+            background: url(./无标题.png);
+            
+            
+        }
+        body {
+            text-align: center;
+        }
+        .line {
+            line-height: 1;
+        }
+        img {
+            width: 20px;
+            
+        }
+        input {
+            height: 200px;
+            width: 200px;
+        }
+        a {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <select name="" id="">
+        <option value="222"></option>
+    </select>
+    <p>我是一个标签，要缩进</p>
+    <p>我也要缩进</p>
+    <div class="box" style="margin: 0 auto;">
+        <p>我是一行div文本</p>
+        
+    </div>
+    <span class="box">
+        我要居中
+    </span>
+    <a href="http://www.baidu.com" style="text-decoration: none;">baidu</a>
+    <div class="line">
+        我很瘦
+    </div>
+    <img src="./无标题.png" alt="">
+</body>
+</html>
